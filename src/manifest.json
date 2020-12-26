@@ -1,21 +1,29 @@
 {
     "name": "2020-12-26.chrome-extension",
-    "short_name": "2020-12-26.chrome-extension",
-    "start_url": "/",
-    "display": "standalone",
-    "orientation": "portrait",
-    "background_color": "#fff",
-    "theme_color": "#673ab8",
-    "icons": [
-        {
-            "src": "/assets/icons/android-chrome-192x192.png",
-            "type": "image/png",
-            "sizes": "192x192"
-        },
-        {
-            "src": "/assets/icons/android-chrome-512x512.png",
-            "type": "image/png",
-            "sizes": "512x512"
+    "short_name": "my extension",
+    "description": "my extension",
+    "version": "0.0.0",
+    "permissions": ["activeTab", "declarativeContent", "storage"],
+    "browser_action": {
+        "default_popup": "/",
+        "default_icon": {
+            "16": "/assets/icons/favicon-16x16.png",
+            "32": "/assets/icons/favicon-32x32.png",
+            "48": "/assets/favicon.ico",
+            "150": "/assets/icons/mstile-150x150.png",
+            "180": "/assets/icons/apple-touch-icon.png",
+            "192": "/assets/icons/android-chrome-192x192.png",
+            "512": "/assets/icons/android-chrome-512x512.png"
         }
-    ]
+    },
+    "icons": {
+        "16": "/assets/icons/favicon-16x16.png",
+        "32": "/assets/icons/favicon-32x32.png",
+        "48": "/assets/favicon.ico",
+        "150": "/assets/icons/mstile-150x150.png",
+        "180": "/assets/icons/apple-touch-icon.png",
+        "192": "/assets/icons/android-chrome-192x192.png",
+        "512": "/assets/icons/android-chrome-512x512.png"
+    },
+    "manifest_version": 2
 }
