@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "format": "prettier --write '*.{js,ts,json,md}' 'src/**/*.{js,jsx,ts,tsx,json,md}'",
     "build": "preact build",
     "serve": "sirv build --port 8080 --cors --single",
     "dev": "preact watch",
